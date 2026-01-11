@@ -203,7 +203,7 @@
         let nextDirection = { x: 1, y: 0 };
         let score = 0;
         let highScore = localStorage.getItem('snakeHighScore') || 0;
-        let gameSpeed = 100;
+        let gameSpeed = 200;
         let gameLoop;
         let isGameOver = false;
         let isPaused = false;
@@ -458,7 +458,7 @@
 
         // Restart button
         restartBtn.addEventListener('click', () => {
-            gameSpeed = 100;
+            gameSpeed = 200;
             initGame();
         });
 
